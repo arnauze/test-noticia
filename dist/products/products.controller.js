@@ -22,12 +22,10 @@ let ProductsController = class ProductsController {
     async getProductsByCode(params) {
         var code_name = +params.code;
         var product = await this.productsService.getProductByCode(code_name);
-        console.log(product);
         return product;
     }
     async getProductsByName(params) {
         var product = await this.productsService.getProductByName(params.name);
-        console.log(product);
         return product;
     }
 };

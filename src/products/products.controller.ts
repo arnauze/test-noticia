@@ -24,8 +24,6 @@ export class ProductsController {
 
         var product = await this.productsService.getProductByCode(code_name)
 
-        console.log(product)
-
         return product;
     }
 
@@ -44,8 +42,6 @@ export class ProductsController {
         */
 
         var product = await this.productsService.getProductByName(params.name)
-
-        console.log(product)
 
         return product;
     }
