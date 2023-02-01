@@ -12,7 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductsService = void 0;
 const common_1 = require("@nestjs/common");
 const mongo = require("mongodb");
-const client = new mongo.MongoClient("mongodb://127.0.0.1:27017");
+const MONGO_URL = "mongodb://127.0.0.1:27017";
+const client = new mongo.MongoClient(MONGO_URL);
 let ProductsService = class ProductsService {
     constructor() {
         client.connect();
