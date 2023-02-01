@@ -16,8 +16,8 @@ export class ProductsController {
             Returns:
                 ProductInterface object
             Url: 
-                https//localhost:3001/products/code/{code}
-            Method: Get
+                http://localhost:3001/products/code/{code}
+            Method: GET
         */
 
         var code_name: number = +params.code;
@@ -37,8 +37,8 @@ export class ProductsController {
             Returns:
                 ProductInterface object
             Url: 
-                https//localhost:3001/products/name/{product_name}
-            Method: Get
+                http://localhost:3001/products/name/{product_name}
+            Method: GET
         */
 
         var product = await this.productsService.getProductByName(params.name)
