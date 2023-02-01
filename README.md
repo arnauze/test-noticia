@@ -4,6 +4,14 @@
 $ npm install
 ```
 
+## Installing db locally
+
+```bash
+First, download the csv brut file from https://fr.openfoodfacts.org/data
+Then run
+$ mongoimport --db noticia --collection products --file en.openfoodfacts.org.products.csv --type tsv --headerline
+```
+
 ## Running the app
 
 ```bash
